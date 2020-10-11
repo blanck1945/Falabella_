@@ -1,0 +1,34 @@
+@import "../../main.scss";
+.succ_box {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .user_box {
+    height: 250px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+  }
+  .fala_col {
+    color: $falabella;
+    font-size: 1.5rem;
+    font-family: $lato;
+  }
+  .timer_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .timer_text {
+      font-family: $lato;
+      font-size: 1.5rem;
+      color: $power_dark;
+    }
+    .timer {
+      font-size: 1.4rem;
+      color: $falabella;
+    }
+  }
+}

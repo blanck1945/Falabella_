@@ -1,0 +1,29 @@
+@import "../../../main.scss";
+.circle_dis_box {
+  width: 70%;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+  .circle_dis {
+    display: flex;
+    margin-top: 10px;
+    .circle_img_box {
+      margin: 0 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      .circle_img {
+        border-radius: 50%;
+        max-width: 145px;
+      }
+      .circle_text {
+        font-family: $lato;
+        font-size: 0.9rem;
+        font-weight: 400;
+        margin-top: 10px;
+      }
+    }
+  }
+}

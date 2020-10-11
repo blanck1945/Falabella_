@@ -1,0 +1,21 @@
+.data_comp_box {
+  width: 80%;
+  min-height: 100px;
+  margin-top: 25px;
+  display: flex;
+  background-color: white;
+  align-items: center;
+}
+.data_comp_box_down {
+  @extend .data_comp_box;
+  background-color: red;
+  cursor: pointer;
+  .link {
+    background-color: green;
+    width: 50%;
+    height: 100px;
+    .bank_gif {
+      max-width: 100%;
+    }
+  }
+}

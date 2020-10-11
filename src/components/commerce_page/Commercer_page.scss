@@ -1,0 +1,33 @@
+@import "../../main.scss";
+.commerce_page {
+  width: 100%;
+  min-height: 100%;
+  background-color: $commerce_bg;
+  .info_nav {
+    width: 100%;
+    background-color: $bg;
+    height: 30px;
+    .info_box {
+      display: flex;
+      width: 50%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      .info_text {
+        font-family: $lato;
+        color: $dark_grey;
+        margin: 0 6px;
+        font-size: 0.7rem;
+        font-weight: 400;
+      }
+    }
+  }
+  .commerce_central {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    min-height: 200px;
+  }
+}

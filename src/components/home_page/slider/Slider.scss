@@ -1,0 +1,38 @@
+.slider_box {
+  width: 70%;
+  min-height: 300px;
+  display: flex;
+  margin-top: 55px;
+  flex-direction: column;
+  overflow: hidden;
+  .slider {
+    transform: translateX(0);
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    .slider_1 {
+      width: 100%;
+      display: flex;
+      height: 100%;
+      .slider_img {
+        margin: 0 3px;
+      }
+    }
+  }
+  .moved {
+    transform: translateX(-101.5%);
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    .slider_1 {
+      width: 100%;
+      display: flex;
+      height: 100%;
+      .slider_img {
+        margin: 0 3px;
+      }
+    }
+  }
+}

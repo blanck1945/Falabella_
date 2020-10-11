@@ -1,0 +1,17 @@
+@import "../../main.scss";
+.falabella_title {
+  height: 30px;
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+  align-items: center;
+  .diamond_icon {
+    color: $falabella;
+  }
+  .falabella_text {
+    margin-left: 5px;
+    font-family: $lato;
+    font-weight: 400;
+    color: $black;
+  }
+}

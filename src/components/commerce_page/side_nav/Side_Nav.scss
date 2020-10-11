@@ -1,0 +1,12 @@
+.side_nav {
+  width: 30%;
+  min-height: 200px;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  .side_nav_box {
+    background-color: rgb(20, 72, 121);
+    width: 70%;
+  }
+}

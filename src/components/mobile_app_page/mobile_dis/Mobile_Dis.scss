@@ -1,0 +1,57 @@
+@import "../../../main.scss";
+.mobile_dis {
+  width: 100%;
+  height: 85%;
+  .dis_box {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    .label_up {
+      font-family: $lato;
+      color: $power_dark;
+      margin-top: 20px;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .green_header {
+      color: $falabella;
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      font-family: $lato;
+      margin: 10px 0;
+    }
+    .label_box {
+      display: flex;
+      flex-direction: column;
+      color: $power_dark;
+      font-weight: 400;
+      .label_down {
+        font-family: $lato;
+        font-size: 0.9rem;
+        line-height: 24px;
+      }
+    }
+    .qr_box {
+      width: 60%;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      padding-right: 6px;
+      border: 1px solid $falabella;
+      .qr_code {
+        height: 100%;
+      }
+      .qr_text {
+        font-size: 0.9rem;
+        color: $power_dark;
+        font-family: $lato;
+      }
+      .qr_span {
+        color: $falabella;
+      }
+    }
+  }
+}

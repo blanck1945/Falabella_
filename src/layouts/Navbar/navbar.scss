@@ -1,0 +1,271 @@
+@import "../../main.scss";
+.navbar {
+  display: flex;
+  flex-direction: column;
+  min-height: 130px;
+  width: 100%;
+  border-bottom: 2px solid $falabella;
+  .up_navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 30px;
+    border-top: 2px solid $falabella;
+    background-color: $black;
+    .link_box {
+      z-index: 7;
+      .falabella_logo {
+        width: 50px;
+        z-index: 7;
+        margin-top: 20px;
+        cursor: pointer;
+        margin-left: 150px;
+      }
+    }
+    .venta_phone {
+      color: #eee;
+      width: 45%;
+      display: flex;
+      justify-content: center;
+      font-size: 0.6rem;
+      text-transform: uppercase;
+    }
+    .up_links {
+      min-width: 45%;
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      color: #eee;
+      display: flex;
+      align-items: center;
+      .right_bor {
+        border-right: none;
+        text-decoration: none;
+      }
+      .right_bor:hover {
+        text-decoration: underline;
+      }
+    }
+    .up_links > a {
+      padding: 2px 5px;
+      color: #eee;
+      margin: 0 3px;
+      padding-right: 8px;
+      text-decoration: none;
+      border-right: 1px solid #eee;
+    }
+    .up_links > a:hover {
+      text-decoration: underline;
+    }
+    .select_region {
+      width: 20px;
+      background-color: $black;
+      border: none;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      justify-content: space-evenly;
+      width: 30px;
+      .flag_icon {
+        width: 15px;
+      }
+    }
+  }
+  .center_navbar {
+    width: 100%;
+    background-color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(197, 197, 197);
+    .category_burger {
+      display: flex;
+      width: 130px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      margin-right: 15px;
+      justify-content: space-evenly;
+      padding: 0 4px;
+      .burger_text {
+        font-size: 0.7rem;
+        font-family: $lato;
+        text-transform: uppercase;
+      }
+      .burger_icon {
+        margin-right: 10px;
+        height: 30px;
+        width: 60px;
+        font-size: 1.1rem;
+        border: 1px solid $black;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+    .search_bar {
+      width: 400px;
+      height: 35px;
+      border: 1px solid $grey;
+      border-radius: 4px;
+      margin: 0 10px;
+      padding-left: 8px;
+    }
+    .user_box {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-left: 5px;
+      .user_box_item {
+        min-height: 49px;
+        border-left: 1px solid $grey;
+        min-width: 55px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: $falabella;
+        transition: 0.4s ease-in-out;
+        cursor: pointer;
+        padding: 0 8px;
+        border-bottom: 3px solid white;
+        .user_log {
+          margin-left: 12px;
+          cursor: pointer;
+          .user_session {
+            color: $grey;
+            font-size: 0.8rem;
+            font-family: $lato;
+          }
+          .user_account {
+            color: $black;
+            text-decoration: underline;
+            font-size: 0.6rem;
+            font-family: $lato;
+          }
+        }
+        .text_green {
+          font-size: 0.7rem;
+          font-family: $lato;
+          margin-top: 4px;
+        }
+        .icon_green {
+          font-family: $lato;
+          font-size: 1rem;
+        }
+      }
+      .border_hov:hover {
+        border-bottom: 3px solid $falabella;
+        transition: 0.5s ease-in-out;
+      }
+      .flex {
+        flex-direction: row;
+      }
+      .right_bor {
+        border-right: 1px solid $grey;
+      }
+    }
+  }
+  .center_down_navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    .down_nav_box {
+      width: 55%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .down_nav_link {
+        text-transform: uppercase;
+        height: 80%;
+        margin-left: 12px;
+        font-family: $lato;
+        font-size: 0.6rem;
+        text-decoration: none;
+        color: rgb(109, 109, 109);
+        transition: 0.3s ease-in-out;
+      }
+      .down_nav_link:hover {
+        color: rgb(189, 187, 187);
+        transition: 0.3s ease-in-out;
+      }
+    }
+  }
+  .down_navbar {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid rgb(224, 223, 223);
+    background-color: rgb(246, 246, 246);
+    .cmr_box {
+      display: flex;
+      align-items: center;
+      min-width: 80%;
+      height: 45px;
+      justify-content: center;
+      .cmr_img {
+        width: 100%;
+        padding-right: 9px;
+        height: 38px;
+      }
+      .small {
+        height: 33px;
+        width: 65px;
+      }
+      .offer_box {
+        display: flex;
+        font-size: 0.8rem;
+        width: 70%;
+        border-left: 1px solid rgb(206, 206, 206);
+        padding-left: 7px;
+        .offer_green {
+          color: $cmr;
+          font-family: $lato;
+          text-transform: uppercase;
+          font-size: 0.8rem;
+        }
+        .offer_black {
+          font-family: $lato;
+          color: $black;
+          font-size: 0.8rem;
+          margin-right: 10px;
+          text-transform: uppercase;
+        }
+      }
+      .ver_box {
+        margin-left: 5px;
+        display: flex;
+        align-items: center;
+        width: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .ver_text {
+          font-size: 0.8rem;
+          color: $black;
+          text-decoration: underline;
+          font-family: $lato;
+        }
+        .ver_arrow {
+          margin-left: 4px;
+          font-size: 0.8rem;
+          color: $black;
+          margin-top: 3px;
+        }
+      }
+    }
+  }
+}
+.page_overlay {
+  width: 100%;
+  min-height: 200%;
+  position: absolute;
+  top: 12.3%;
+  z-index: 4;
+  background-color: $dark;
+}

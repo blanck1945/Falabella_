@@ -1,0 +1,35 @@
+@import "../../../main.scss";
+.country_menu {
+  position: fixed;
+  top: 5%;
+  z-index: 7;
+  border: 1px solid $falabella;
+  width: 180px;
+  height: 225px;
+  background-color: $bg;
+  .country_div {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 16px 4px 4px 16px;
+    .fala_resize {
+      width: 16px;
+    }
+    .country_text {
+      color: $grey;
+      font-family: $lato;
+      font-weight: 400;
+      font-size: 0.8rem;
+      text-transform: none;
+      margin-bottom: 1px;
+      margin-left: 7px;
+      line-height: 20px;
+    }
+    .country_text:hover {
+      color: $dark_grey;
+    }
+    .fala {
+      color: $falabella;
+    }
+  }
+}

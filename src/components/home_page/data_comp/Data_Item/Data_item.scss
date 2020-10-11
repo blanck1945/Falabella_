@@ -1,0 +1,34 @@
+@import "../../../../main.scss";
+.data_item {
+  width: 280px;
+  height: 60px;
+  margin: 0 5px;
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+  .data_icon {
+    color: $falabella;
+    border-radius: 50%;
+    width: 60px;
+    margin-right: 6px;
+    padding: 8px;
+    background-color: $falabella;
+  }
+  .data_item_label {
+    color: $black;
+    font-family: $lato;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+  .data_para {
+    font-family: $lato;
+    color: $black;
+    font-size: 0.7rem;
+  }
+  .data_link {
+    color: $black;
+    font-size: 0.7rem;
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+}

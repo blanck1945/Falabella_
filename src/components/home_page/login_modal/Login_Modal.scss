@@ -1,0 +1,135 @@
+@import "../../../main.scss";
+.login_modal {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(73, 73, 73, 0.507);
+  z-index: 7;
+  .login_header {
+    display: flex;
+    flex-direction: column;
+    min-height: 450px;
+    padding: 6px 0;
+    align-items: center;
+    z-index: 8;
+    position: absolute;
+    border-radius: 5px;
+    width: 320px;
+    background-color: $bg;
+    .login_init {
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      border-bottom: 1px solid $light_grey;
+      height: 80px;
+      margin-bottom: 25px;
+      .login_icon {
+        margin-right: 15px;
+        color: $falabella;
+      }
+      .login_text {
+        color: $black;
+        margin-top: 3px;
+        font-family: $lato;
+        font-size: 0.9rem;
+      }
+      .login_x {
+        color: $black;
+        margin-left: 85px;
+        cursor: pointer;
+      }
+    }
+    .login_user {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      min-height: 50px;
+      align-items: center;
+      justify-content: space-between;
+      .input_div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 14px 0;
+        justify-content: space-evenly;
+        min-height: 30px;
+        .user_inp {
+          border: none;
+          border-bottom: 1px solid $black;
+          min-height: 30px;
+          width: 80%;
+        }
+        .user_inp:focus {
+          border-bottom: 1px solid $falabella;
+        }
+        .user_inp::placeholder {
+          color: $power_dark;
+          font-family: $lato;
+        }
+        .error_text {
+          color: $error;
+          font-family: $lato;
+          font-weight: 400;
+          font-size: 0.8rem;
+          height: 20px;
+          margin-top: 5px;
+        }
+      }
+      .login_forget {
+        color: $black;
+        margin: 12px 0;
+        font-family: $lato;
+        font-weight: 400;
+        cursor: pointer;
+        font-size: 0.8rem;
+        min-height: 30px;
+        text-decoration: underline;
+        .register {
+          text-decoration: underline;
+          color: $power_dark;
+        }
+        .register:hover {
+          color: $falabella;
+          transition: 0.2s ease-in-out;
+        }
+      }
+      .login_no_line {
+        text-decoration: none;
+      }
+      .submit_btn {
+        height: 40px;
+        width: 80%;
+        background-color: $falabella;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $bg;
+        font-family: $lato;
+        font-size: 0.8rem;
+        border: none;
+        margin: 4px 0;
+        border-radius: 5px;
+        cursor: pointer;
+        text-transform: uppercase;
+      }
+      .disabled {
+        background-color: $light_grey;
+      }
+      .facebook_btn {
+        @extend .submit_btn;
+        background-color: $facebook;
+        color: $bg;
+        .fb_icon {
+          color: $bg;
+          margin-right: 10px;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

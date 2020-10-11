@@ -1,0 +1,42 @@
+@import "../../main.scss";
+.home_page {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: $bg;
+  flex-direction: column;
+  .absolute_div {
+    position: fixed;
+    right: 3%;
+    top: 80%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .boot {
+      width: 65px;
+      cursor: pointer;
+    }
+    .arrow_up {
+      background-color: $black;
+      padding: 8px;
+      color: white;
+      position: fixed;
+      right: 4%;
+      top: 90%;
+      margin-top: 5px;
+      margin-left: 8px;
+      transition: 0.3s ease-in-out;
+      font-size: 2rem;
+      cursor: pointer;
+      opacity: 0.8;
+      visibility: visible;
+    }
+    .no_show {
+      transition: 0.3s ease-in-out;
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+}

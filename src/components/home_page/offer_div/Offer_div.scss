@@ -1,0 +1,62 @@
+@import "../../../main.scss";
+.offer_div {
+  width: 80%;
+  height: 270px;
+  margin: auto;
+  margin-top: 25px;
+  .offer_nav {
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    background-color: rgb(121, 121, 121);
+    height: 30px;
+    display: flex;
+    .nav_red {
+      width: 190px;
+      background-color: rgb(228, 2, 45);
+      color: $bg;
+      height: 30px;
+      border-radius: 8px 30px 30px 0;
+      font-family: $lato;
+      text-transform: uppercase;
+      font-size: 1rem;
+      display: flex;
+      letter-spacing: 1.2px;
+      align-items: center;
+      justify-content: center;
+    }
+    .offer_text_box {
+      width: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 30px;
+      margin-left: 20px;
+      .offer_text {
+        min-width: 110px;
+        font-family: $lato;
+        color: $bg;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        border-right: 1px solid $bg;
+        font-size: 0.8rem;
+      }
+      .no_right {
+        border-right: none;
+      }
+    }
+  }
+  .offer_item_box {
+    width: 100%;
+    background-color: $dark_grey;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    height: 210px;
+    .offer_img {
+      width: 93%;
+      height: 180px;
+    }
+  }
+}

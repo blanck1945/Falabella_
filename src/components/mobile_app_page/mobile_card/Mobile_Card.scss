@@ -1,0 +1,52 @@
+@import "../../../main.scss";
+.mobile_card {
+  width: 400px;
+  height: 270px;
+  background-color: white;
+  margin-left: 100px;
+  border-bottom: 2px solid $falabella;
+  .card_header {
+    display: flex;
+    align-items: center;
+    height: 25%;
+    width: 100%;
+    text-transform: uppercase;
+    color: $power_dark;
+    .green_icon {
+      color: $falabella;
+      font-size: 1.9rem;
+      position: relative;
+      right: 15px;
+    }
+    .card_header_text {
+      border-bottom: 1px solid $grey;
+      font-family: $lato;
+      font-size: 0.7rem;
+      width: 80%;
+      line-height: 64px;
+      margin-left: 15px;
+    }
+  }
+  .card_body {
+    height: 75%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 48px;
+    margin-top: 15px;
+    .body_header {
+      font-family: $lato;
+      font-size: 1.8rem;
+      font-weight: 300;
+      color: $power_dark;
+    }
+    .body_para {
+      margin-top: 25px;
+      font-family: $lato;
+      color: $power_dark;
+      font-weight: 300;
+      font-size: 1rem;
+    }
+  }
+}

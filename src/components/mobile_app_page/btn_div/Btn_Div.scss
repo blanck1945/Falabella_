@@ -1,0 +1,26 @@
+@import "../../../main.scss";
+.btn_div {
+  width: 100%;
+  height: 80px;
+  margin: 8px 0;
+  padding-top: 15px;
+  display: flex;
+  .mobile_btn {
+    background-color: rgb(51, 51, 51);
+    border-radius: 5px;
+    border: none;
+    width: 28%px;
+    height: 55px;
+    display: flex;
+    margin-right: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+  }
+  .mobile_btn:hover {
+    background-color: rgb(27, 27, 27);
+    transition: 0.3s ease-in-out;
+  }
+}

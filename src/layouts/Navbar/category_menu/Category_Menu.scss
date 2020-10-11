@@ -1,0 +1,11 @@
+@import "../../../main.scss";
+.category_menu_box {
+  width: 200px;
+  height: 310px;
+  left: 10%;
+  z-index: 6;
+  top: 12.3%;
+  border-top: 1px solid $dark;
+  position: absolute;
+  background-color: $bg;
+}

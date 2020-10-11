@@ -1,0 +1,51 @@
+@import "../../../../main.scss";
+.category_item_menu {
+  height: 310px;
+  border-top: 1px solid $dark;
+  padding-left: 8px;
+  width: 300px;
+  position: absolute;
+  top: 12.3%;
+  border-left: 1px solid $power_dark;
+  left: 25.5%;
+  background-color: $bg;
+  z-index: 6;
+  background-color: red;
+  .category_div {
+    width: 300px;
+    height: 310px;
+    .green_header {
+      color: $falabella;
+      font-family: $lato;
+      margin-top: 5px;
+      width: 160px;
+      margin-bottom: 7px;
+      border-bottom: 1px solid $black;
+      line-height: 26px;
+      font-size: 0.8rem;
+    }
+    .header {
+      color: $dark_grey;
+      font-family: $lato;
+      font-size: 0.7rem;
+      font-weight: 400;
+      cursor: pointer;
+      line-height: 18px;
+    }
+    .header:hover {
+      color: $black;
+      transition: 0.2s ease-in-out;
+    }
+    .black_header {
+      @extend .header;
+      transition: none;
+      color: $black;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+    .black_header:hover {
+      color: $falabella;
+      transition: 0.2s ease-in-out;
+    }
+  }
+}

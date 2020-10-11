@@ -1,0 +1,160 @@
+@import "../../main.scss";
+.register_page {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .form_header {
+    width: 80%;
+    margin-top: 20px;
+    border: 1px solid $power_dark;
+    height: 120px;
+    border-bottom: none;
+    .header_up {
+      border-bottom: 1px solid $falabella;
+      display: flex;
+      height: 60px;
+      align-items: center;
+      justify-content: center;
+      .up_text {
+        font-family: $lato;
+        font-weight: 700;
+        font-size: 2.5rem;
+      }
+    }
+    .header_down {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid $falabella;
+      height: 60px;
+      padding: 0 16px;
+      justify-content: space-between;
+      .down_text {
+        font-family: $lato;
+        font-weight: 400;
+        font-size: 1.2rem;
+        color: $dark;
+      }
+    }
+  }
+  .register_form {
+    width: 65%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 35px;
+    align-items: center;
+    .form_div {
+      display: grid;
+      grid-template-columns: 150px 350px 75px;
+      margin: 8px 0;
+      align-items: center;
+      .form_label {
+        font-family: $lato;
+        color: $power_dark;
+        width: 100%;
+        text-align: right;
+      }
+      .form_inp {
+        height: 30px;
+        margin-left: 5px;
+        border-radius: 5px;
+        outline: none;
+        color: $power_dark;
+        border: 1px solid $dark_grey;
+        padding-left: 4px;
+      }
+      .form_inp:focus {
+        border: 1px solid $falabella;
+      }
+      .error_col {
+        margin-left: 8px;
+        color: brown;
+        font-size: 1.1rem;
+      }
+      .green_col {
+        @extend .error_col;
+        color: greenyellow;
+      }
+    }
+    .error_text {
+      color: brown;
+      font-family: $lato;
+      font-size: 0.8rem;
+    }
+    .gender_div {
+      @extend .form_div;
+      display: grid;
+      grid-template-columns: 150px 175px 175px;
+      .gender_inner_div {
+        margin-left: 45px;
+        .form_check {
+          cursor: pointer;
+          margin-right: 5px;
+        }
+        .form_check:hover {
+          color: cyan;
+        }
+      }
+    }
+    .birth_div {
+      @extend .form_div;
+      grid-template-columns: 150px 100px 150px 100px 75px;
+      .birth_select {
+        @extend .form_inp;
+        border-radius: 3px;
+        color: $power_dark;
+      }
+    }
+  }
+  .form_footer_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 12px auto;
+    width: 60%;
+    .form_footer_check {
+      display: flex;
+      width: 80%;
+      text-align: center;
+      margin: 5px auto;
+      .footer_check {
+        height: 10px;
+        margin-top: 3px;
+        margin-right: 4px;
+        cursor: pointer;
+        width: 10px;
+      }
+      .footer_check:hover {
+        color: darkcyan;
+      }
+      .check_text {
+        color: $power_dark;
+        font-family: $lato;
+        font-weight: 400;
+        font-size: 0.8rem;
+        .main_link {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .falabella_btn {
+    width: 35%;
+    cursor: pointer;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: $falabella;
+    color: $bg;
+    font-family: $lato;
+    font-size: 1.2rem;
+    transition: 0.2s ease-in-out;
+  }
+  .falabella_btn:hover {
+    background-color: rgb(147, 184, 0);
+    transition: 0.2s ease-in-out;
+  }
+}

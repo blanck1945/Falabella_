@@ -1,0 +1,22 @@
+@import "../../../main.scss";
+.up_list {
+  margin-top: 45px;
+  width: 13%;
+  .list_header {
+    font-family: $lato;
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+    color: $dark_grey;
+  }
+  .list_text {
+    font-family: $lato;
+    font-weight: 400;
+    line-height: 24px;
+    color: $dark_grey;
+    font-size: 0.7rem;
+    cursor: pointer;
+  }
+  .list_text:hover {
+    text-decoration: underline;
+  }
+}

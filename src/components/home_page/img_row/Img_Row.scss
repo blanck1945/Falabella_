@@ -1,0 +1,13 @@
+.img_row_box {
+  display: flex;
+  align-items: center;
+  width: 82%;
+  min-height: 200px;
+  justify-content: center;
+  .img_row {
+    margin: 0 3px;
+    margin-bottom: 3px;
+    cursor: pointer;
+    height: 250px;
+  }
+}

@@ -1,0 +1,35 @@
+@import "../../../../main.scss";
+.category_item {
+  height: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 22px;
+  font-size: 0.7rem;
+  font-family: $lato;
+  color: $black;
+  justify-content: space-between;
+  cursor: pointer;
+  border-left: 3px solid $bg;
+  .close_text {
+    font-family: $lato;
+    height: 95%;
+    width: 70%;
+    display: flex;
+    justify-content: left;
+    font-size: 0.7rem;
+  }
+  .show_icon {
+    margin-right: 5px;
+    visibility: hidden;
+  }
+}
+.category_item:hover {
+  border-left: 3px solid $falabella;
+  color: $falabella;
+}
+.category_item:hover > .show_icon {
+  visibility: visible;
+  margin-top: 3px;
+  font-size: 1.1rem;
+}

@@ -1,0 +1,26 @@
+@import "../../main.scss";
+.loading_page {
+  position: fixed;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: $bg;
+  background-image: url("../../assets//falabella_bg/1200px-Falabella.svg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .loading_msg_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    .loading_label {
+      margin-bottom: 15px;
+      color: $power_dark;
+      font-family: $lato;
+      font-size: 1.6rem;
+    }
+  }
+}

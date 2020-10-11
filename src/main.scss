@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 99vw;
+  height: 100vh;
+}
+
+//Color Variables
+
+$falabella: rgb(170, 213, 0);
+$cmr: rgb(61, 175, 44);
+$black: rgb(26, 26, 26);
+$light_grey: rgb(223, 225, 230);
+$grey: rgb(190, 190, 190);
+$dark_grey: rgb(153, 153, 153);
+$dark: rgba(47, 47, 47, 0.582);
+$power_dark: rgba(47, 47, 47, 0.904);
+$bg: rgb(251, 251, 251);
+$light_white: rgb(244, 244, 244);
+$commerce_bg: rgb(238, 238, 238);
+$facebook: #3b5998;
+$error: #ed4337;
+$lato: "Lato", sans-serif;

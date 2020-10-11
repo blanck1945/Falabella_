@@ -1,0 +1,49 @@
+@import "../../../main.scss";
+.costo_financiero_box {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  .costo_header {
+    height: 90px;
+    width: 40%;
+    color: $grey;
+    .header_1 {
+      font-size: 2.5rem;
+      font-weight: 400;
+      font-family: $lato;
+      color: $dark_grey;
+    }
+    .header_link_box {
+      color: $dark_grey;
+      margin-bottom: 5px;
+      .link_header {
+        font-weight: 400;
+        font-size: 0.8rem;
+        font-family: $lato;
+      }
+      .link_text {
+        @extend .link_header;
+      }
+    }
+  }
+  .costo_msg {
+    .costo_msg_header {
+      color: $dark_grey;
+      font-family: $lato;
+      font-size: 1.1rem;
+      font-weight: 700;
+      line-height: 30px;
+    }
+    .costo_para {
+      font-family: $lato;
+      font-weight: 400;
+      font-size: 0.7rem;
+      line-height: 19px;
+      color: $dark_grey;
+    }
+    .costo_para > strong {
+      color: $dark;
+    }
+  }
+}
