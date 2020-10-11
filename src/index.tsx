@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as reactDOM from "react-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Navbar from "./layouts/Navbar/navbar";
+import Navbar from "./layouts/Navbar/Navbar";
 import Footer from "./layouts/Footer/Footer";
 import { Provider } from "react-redux";
 import { store as Redux_Store } from "./Redux_Store/store";
